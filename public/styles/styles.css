@@ -1,0 +1,44 @@
+.sidebar { 
+  background-color: mediumspringgreen;
+}
+body {
+  background-image: url(../assets/background2.png);
+}
+.jumbotron{
+  background-color:#c88937;
+  height:150px; 
+}
+.user-info{
+  background-color: blanchedalmond;
+}
+#category-name, #new-user-name, #food-desc{
+  width:240px; 
+}
+#activity-name, #new-food{
+  width:440px; 
+}
+.actNameList, .foodNameList{
+  width:340px; 
+}
+.actMetList, .foodCalList{
+  width:60px; 
+}
+.form-group{
+  margin-bottom:0px;
+}
+p{
+  margin-bottom:8px;
+}
+#new-met, #new-food{
+  width: 140px;
+}
+#calc-user, #submit-user, #upsert-user, #submit-user-act{
+  margin-left:4px; 
+}
+ul{
+  padding-left:24px;
+}
+
+#first_page_main {
+  margin: 0 auto;
+}

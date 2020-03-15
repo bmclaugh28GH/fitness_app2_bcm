@@ -1,0 +1,27 @@
+{
+  "development": {
+    "username": "root",
+    "port": "3306",
+    "password": "testtest",
+    "database": "fitness_app2_db", 
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "admin",
+    "database": "testdb",
+    "host": "localhost",
+    "dialect": "mysql",
+    "logging": false
+  },
+  "production": {
+    "host": "dno6xji1n8fm828n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "username": "yf49vkxoup1vvxnb",
+    "port": "3306",
+    "password": "y8rqfbwkguagw6qp",
+    "database": "t9aar0id3oz94g0a", 
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
+  }
+}

@@ -1,0 +1,92 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2>{{name}}'s Fitness Log</h2>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-primary float-right mx-2">Log Food</button>
+            <button type="button" class="btn btn-primary float-right mx-2">Log Activity</button>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="card">
+            <h3>Targets</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col">Calorie</th>
+                    <th scope="col">Protein</th>
+                    <th scope="col">Fat</th>
+                    <th scope="col">Carb</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>{{goal_cal}}</td>
+                    <td>{{goal_pro}}</td>
+                    <td>{{goal_fat}}</td>
+                    <td>{{goal_carb}}</td>
+                    </tr>
+                    <tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="card">
+            <h3>Activity</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col">Activity ID</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">Calories Burned</th>
+                    <th scope="col">Date</th>
+                    </tr>
+                </thead>
+            {{#each examples_activity}}
+                <tbody>
+                    <tr>
+                    <td>{{this.fk_activity}}</td>
+                    <td>{{this.duration}}</td>
+                    <td>{{this.calories_per_activity}}</td>
+                    <td>{{this.activity_dt}}</td>
+                    </tr>
+                    <tr>
+                </tbody>
+            {{/each}}
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card">
+            <h3>Food</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col">Food ID</th>
+                    <th scope="col">Calories</th>
+                    <th scope="col">Fat</th>
+                    <th scope="col">Carbs</th>
+                    <th scope="col">Date</th>
+                    </tr>
+                </thead>
+            {{#each examples_food}}
+                <tbody>
+                    <tr>
+                    <td>{{this.FoodId}}</td>
+                    <td>{{this.Calories}}</td>
+                    <td>{{this.Fat}}</td>
+                    <td>{{this.Carbohydrates}}</td>
+                    <td>{{this.FoodConsume_dt}}</td>
+                    </tr>
+                    <tr>
+                </tbody>
+            {{/each}}
+            </table>
+        </div>
+    </div>
+</div>
